@@ -1,20 +1,29 @@
 package JavaTask;
 import java.util.Arrays;
 import java.util.Scanner;
-
+/*
+ *  1. Write a program to swap 2 numbers without a temporary variable? Swap 2 strings without a temporary variable?
+ * 	2. Write a java program to find the second largest number in the array? Maximum and minimum number in the array?
+ *	3. Find out how many alpha characters present in a string?
+ *	4. How to find out the part of the string from a string? What is substring? Find number of words in string?
+ *	5. Write a java program to reverse String? Reverse a string word by word?
+ *	6. Write a Java Program to find whether a String is palindrome or not?
+ *  7. Write a java program to check whether a given number is prime or not?
+ *  8. Write a Java Program to print first 10 numbers of Fibonacci series.
+ */
 
 public class PartOne {
 
 	public static void main(String[] args) {
 		
 		
-		
-		
-		
-		
+				
 				//task1
 				//Write a program to swap 2 numbers without a temporary variable? 
 				//Swap 2 strings without a temporary variable?
+		
+		System.out.println("===TASK 1 ===");
+		
 				int a = 10;
 				int b = 20;
 				
@@ -28,6 +37,8 @@ public class PartOne {
 				//Task2
 				//Write a java program to find the second largest number in the array? 
 				//Maximum and minimum number in the array?
+				
+				System.out.println("===TASK 2 ===");
 				
 				int[] array = {15, 11, 24, 44, 9, 14, 56, 30};
 				int max = array[0];
@@ -69,6 +80,8 @@ public class PartOne {
 				//Task3
 				//Find out how many alpha characters present in a string?
 				
+				System.out.println("===TASK 3 ===");
+				
 				String str = "HelloTrololo2239^&((!! Every day the same&*&_$$$$$";
 				String str1 = str.replaceAll("[^a-zA-Z]", "");
 
@@ -81,19 +94,24 @@ public class PartOne {
 				//How to find out the part of the string from a string? 
 				//What is substring? Find number of words in string?
 				
+				System.out.println("===TASK 4 ===");
+				
 				String str2 = "This is November and weather still great";
 				String[] array2 = str2.split(" ");
 				for(int i = 0; i < array2.length; i++) {
 					System.out.println(array2[i]);
-					System.out.println(array2.length);
+					
 				}
-				
+				System.out.println(array2.length);
 				
 				
 				//Task5
 				//5. Write a java program to reverse String? Reverse a string word by word?
 				
+				
 				//Part1: Write a java program to reverse String
+				System.out.println("===TASK 5 ===");
+				
 				String str3 = "This is November and weather still great";
 				char[] arrChar = str3.toCharArray();
 				for(int i = arrChar.length - 1; i >= 0; i--) {
@@ -101,13 +119,13 @@ public class PartOne {
 				}
 				
 				System.out.println();
-				//Part2: Reverse a string word by word
 				
+				
+				//Part2: Reverse a string word by word
 				String[] arrString = str3.split(" ");
 				for(int i = arrString.length - 1; i >= 0; i--) {
 					System.out.print(arrString[i]+ " ");
 				}
-				
 				
 				System.out.println(" ");
 				
@@ -116,6 +134,8 @@ public class PartOne {
 				
 				//Task6 
 				//6. Write a Java Program to find whether a String is palindrome or not?
+				
+				System.out.println("===TASK 6 ===");
 				
 				
 				String str4 = "repaper";
@@ -139,11 +159,26 @@ public class PartOne {
 				}
 				
 				
+				//Task 6 --> second way
+				String original = "kayak";
+				String reversed = "";
+				
+				for(int i = original.length()-1; i >= 0; i--) {
+					reversed = reversed + original.charAt(i); 
+				}
+				System.out.println(reversed);
+				if(original.equals(reversed)) {
+					System.out.println("String is palindrome");
+				}else {
+					System.out.println("String is NOT palindrome");
+				}
 				
 				
-				
+
 				//Task7
 				//Write a java program to check whether a given number is prime or not?
+				
+				System.out.println("===TASK 7 ===");
 				
 				Scanner scan = new Scanner (System.in);
 				System.out.println("Enter the number::");
@@ -183,7 +218,8 @@ public class PartOne {
 				
 				
 				// 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987,
-				//f0 f1 f2
+				
+				System.out.println("===TASK 8 ===");
 				
 				int f0 = 1;
 				int f1 = 1;
@@ -198,11 +234,6 @@ public class PartOne {
 					f0 = f1;
 					f1 = f2;
 				}
-				
-				
-				
-				
-				
 				
 				
 				
