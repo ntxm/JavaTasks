@@ -1,11 +1,9 @@
 package JavaTask;
 
-import java.util.Scanner;
-
 public class partThree {
 	
 		
-		/* 
+		/** 
 		 * ====TASK 1 - Fibonacci series====
 		 * Write a simple Java program which will print Fibonacci series, e.g. 1 1 2 3 5 8 13 ... . 
 		 * up to a given number. 
@@ -26,7 +24,7 @@ public class partThree {
 		}
 	}
 		
-		/*
+		/**
 		 * =====TASK 2 - A prime number====
 		 * Write a Java program to check if a given number is prime or not. 
 		 * Remember, a prime number is a number which is not divisible by any other number, 
@@ -45,7 +43,7 @@ public class partThree {
 	}
 		
 		
-		/*
+		/**
 		 * ====TASK 3 - String Palindrome =====
 		 * You need to write a simple Java program to check if a given String is palindrome or not. 
 		 * A Palindrome is a String which is equal to the reverse of itself, e.g., 
@@ -86,6 +84,7 @@ public class partThree {
 			
 			isNumberIsPrime(17);
 			isNumberIsPrime(16);
+			
 			isPalindrome("Arira");
 			isPalindrome("Flamingo");
 			
