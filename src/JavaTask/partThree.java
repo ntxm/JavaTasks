@@ -123,6 +123,51 @@ public class partThree {
 			System.out.println(number + " is NOT Armstrong number");
 		}
 	}
+	
+	
+	/**
+	 * ====TASK 7 - Factorial ===== 
+	 * @param x
+	 * 
+	 * 5! = 5 * 4 * 3 * 2 * 1
+	 */
+	public static void factorial(int x) {
+		
+	
+		
+		int result = 1;
+		
+		while(x > 0) {
+			
+			result = result * x;
+			x--;
+		}
+		
+		System.out.println(result);
+
+	}
+	
+	/**
+	 * ====TASK 8 - Reverse String =====
+	 * This problem is similar to the String Palindrome problem we have discussed above. 
+	 * If you can solve that problem, you can solve this as well. You can use indexOf() or substring() 
+	 * to reverse a String or alternatively, convert the problem to reverse an array by operating on 
+	 * character array instead of String.
+	 * @param args
+	 */
+	
+	public static void reverseString(String word) {
+		
+		String reverse = "";
+		
+		for(int i = word.length(); i > 0; i--) {
+			reverse = reverse + word.charAt(i-1);
+		}
+		
+		System.out.println(reverse);
+	}
+	
+	
 
 	public static void main(String[] args) {
 
@@ -141,6 +186,12 @@ public class partThree {
 
 		armstrong(370);
 		armstrong(210);
+		
+		factorial(5);
+		factorial(3);
+		
+		reverseString("Brooklyn");
+		
 
 	}
 
