@@ -229,13 +229,14 @@ public class partThree {
 	
 	public static void maxValues(int a, int b, int c, int d, int e, int f) {
 		int[] array = {a, b, c, d, e, f};
-		
+		//    array = 10, 23, 90, 24, 78
 		int maxFirst = 0;
 		int maxSecond = 0;
 		
 		for(int value: array) {
 			if (maxFirst < value) {
-				maxFirst = maxSecond;
+				maxSecond = maxFirst;
+				maxFirst = value;
 			}else if(maxSecond < value){
 				maxSecond = value;
 				
@@ -303,8 +304,10 @@ public class partThree {
 		reverse(40016);
 		
 		maxValue(33, 89, 23, 105,26);
+		maxValue(10, 5, 10, 90, 1);
 		
 		maxValues(10, 34, 78, 12, 27, 57);
+		maxValues(10, 5, 10, 90, 1, 10);
 		
 		removeDuplicate(10, 19, 11, 11, 18);
 		
