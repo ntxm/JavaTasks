@@ -1,5 +1,7 @@
 package JavaTask;
 
+import java.util.Arrays;
+
 public class partThree {
 
 	/**
@@ -156,16 +158,62 @@ public class partThree {
 	 * @param args
 	 */
 	
-	public static void reverseString(String word) {
+	public static void reverse(String word) {
 		
 		String reverse = "";
 		
-		for(int i = word.length(); i > 0; i--) {
-			reverse = reverse + word.charAt(i-1);
+		for(int i = word.length()-1; i>=0; i--) {
+			reverse = reverse + word.charAt(i);
+			
 		}
-		
 		System.out.println(reverse);
 	}
+	
+	
+	/**
+	 * ====TASK 9 - Reverse Int =====
+	 * @param number
+	 */
+	public static void reverse(int number) {
+		//105
+		int reverse = 0;
+		
+		while(number != 0) {
+
+			reverse = (reverse * 10) + (number % 10); //50
+				number = number / 10; //10, 1 0.1
+			}
+			
+		System.out.println(reverse);
+	}
+	
+	
+	/**
+	 * ====TASK 10 - remove duplicate =====
+	 * @param a
+	 * @param b
+	 * @param c
+	 * @param d
+	 * @param e
+	 */
+	
+	public static void removeDuplicate (int a, int b, int c, int d, int e) {
+		
+		int[] array = {a, b, c, d, e};
+		Arrays.sort(array);
+		
+		int[] tempArray = new int[array.length];
+		
+		for(int i = 0; i < array.length-1; i++) {
+			if(array[i] == array[i+1]) {
+				
+			}
+			
+			i++;
+		}
+	}
+	
+	
 	
 	
 
@@ -190,8 +238,14 @@ public class partThree {
 		factorial(5);
 		factorial(3);
 		
-		reverseString("Brooklyn");
+		reverse("Brooklyn");
+		reverse("Terminator");
 		
+		reverse(105);
+		
+		removeDuplicate(10, 19, 11, 11, 18);
+		
+
 
 	}
 
