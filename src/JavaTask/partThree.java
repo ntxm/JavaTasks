@@ -34,7 +34,7 @@ public class partThree {
 	 */
 
 	public static void isNumberIsPrime(int x) {
-		if (x / 1 == x && x / x == 1 && x % 2 != 0) {
+		if (x % 2 != 0) {
 			System.out.println(x + " --> Prime");
 		} else {
 			System.out.println(x + " --> Not Prime");
@@ -187,9 +187,67 @@ public class partThree {
 		System.out.println(reverse);
 	}
 	
+	/**
+	 * ====TASK 10 - Max Value from an Array =====
+	 * Write A Java Program To Find Out The First Two Max Values From An Array?
+	 * 
+	 */
+	
+	public static void maxValue(int a, int b, int c, int d, int e) {
+		int[] array = {a, b, c, d, e};
+		int maxValue = 0;
+		
+		
+		System.out.println("***For loop***");
+		for(int i = 0; i < array.length-1; i++) {
+			if(array[i] > maxValue) {
+				maxValue = array[i];
+			}
+		}
+		System.out.println("Max value from an array: " + maxValue);
+		
+		
+		System.out.println("***Enhanced for Loop***");
+		for(int value: array) {
+			if(value > maxValue) {
+				maxValue = value;
+			}
+		}
+		System.out.println("Max value from an array: " + maxValue);
+		
+		
+		System.out.println("***Array Sort***");
+		Arrays.sort(array);
+		System.out.println("Max value from an array: " + array[array.length-1]);
+		
+	}
 	
 	/**
-	 * ====TASK 10 - remove duplicate =====
+	 * ====TASK 11 - Two Max Values from an Array =====
+	 * Write A Java Program To Find Out The First Two Max Values From An Array?
+	 */
+	
+	public static void maxValues(int a, int b, int c, int d, int e, int f) {
+		int[] array = {a, b, c, d, e, f};
+		
+		int maxFirst = 0;
+		int maxSecond = 0;
+		
+		for(int value: array) {
+			if (maxFirst < value) {
+				maxFirst = maxSecond;
+			}else if(maxSecond < value){
+				maxSecond = value;
+				
+			}
+		}
+		System.out.println("Max two values from array: " + maxFirst + ", " + maxSecond);
+	}
+	
+	
+	
+	/**
+	 * ====TASK ?? - remove duplicate =====
 	 * @param a
 	 * @param b
 	 * @param c
@@ -242,6 +300,11 @@ public class partThree {
 		reverse("Terminator");
 		
 		reverse(105);
+		reverse(40016);
+		
+		maxValue(33, 89, 23, 105,26);
+		
+		maxValues(10, 34, 78, 12, 27, 57);
 		
 		removeDuplicate(10, 19, 11, 11, 18);
 		
